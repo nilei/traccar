@@ -9,8 +9,10 @@ services:
     environment:
       - web.address=0.0.0.0
     ports:
-      - "5001-5267:5001-5267"
-      - "6037:6037"
+      - "5006:5006"
+      - "5015:5015"
+      - "5233:5233"
+      - "5264:5264"
     healthcheck:
       test: ["CMD", "curl", "-sf", "http://localhost:8082/api/server"]
       interval: 30s
