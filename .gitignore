@@ -12,8 +12,3 @@ out
 build
 .vscode
 bin
-
-# Base44 dev environment artifacts
-.base44/
-AGENTS.md
-docker-compose.base44.yml
