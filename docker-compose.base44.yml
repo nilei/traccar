@@ -8,6 +8,9 @@ services:
     command: sh -c "chmod +x gradlew && ./gradlew assemble --no-daemon && java -jar target/tracker-server.jar debug.xml"
     environment:
       - web.address=0.0.0.0
+    ports:
+      - "5001-5267:5001-5267"
+      - "6037:6037"
     healthcheck:
       test: ["CMD", "curl", "-sf", "http://localhost:8082/api/server"]
       interval: 30s
