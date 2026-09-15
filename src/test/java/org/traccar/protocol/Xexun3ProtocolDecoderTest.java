@@ -18,7 +18,8 @@ public class Xexun3ProtocolDecoderTest extends ProtocolTest {
 
         // Frame with NaN GPS coordinates (0xFFFFFFFFFFFFFFFF) and LBS cell tower data
         verifyPosition(decoder, binary(
-                "fc005c032014086259608092620164226aa8261dffffffffffffffffffffffffffffffff00000637004b000641000006913c66116aa8261d01060003000091c400ce5421ff6a1863000116061d000008ffffffffffffff6aa8261d01010000bbfccf"));
+                "fc005c032014086259608092620164226aa8261dffffffffffffffffffffffffffffffff00000637004b000641000006913c66116aa8261d01060003000091c400ce5421ff6a1863000116061d000008ffffffffffffff6aa8261d01010000bbfccf"),
+                position("2026-09-14 16:51:41.000", false, 0, 0));
 
     }
 
