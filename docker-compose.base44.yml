@@ -1,0 +1,18 @@
+services:
+  app:
+    image: eclipse-temurin:21-jdk
+    working_dir: /app
+    volumes:
+      - .:/app
+      - gradle-cache:/root/.gradle
+    ports:
+      - "3000:8082"
+    environment:
+      - BASE44_PUBLIC_HOST_SUFFIX=${BASE44_PUBLIC_HOST_SUFFIX:-preview.example}
+      - BASE44_SANDBOX_HOST_DOMAIN=${BASE44_SANDBOX_HOST_DOMAIN:-sandbox.local}
+    command: >
+      bash -c "./gradlew copyDependencies jar --console=plain &&
+               java -jar target/tracker-server.jar debug.xml"
+
+volumes:
+  gradle-cache:
