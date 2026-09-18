@@ -20,6 +20,24 @@ public class Xexun3ProtocolDecoderTest extends ProtocolTest {
         verifyPosition(decoder, binary(
                 "fc0040032006086104508038701564216913f223403693012f635344405c829142b302f7427f33331a2e000000a40011046a1055ffff1f0000000000ffffff04ff09ff1a30cf"));
 
+        // GPS precision factor (field 12) and tracking duration (field 13)
+        verifyAttribute(decoder, binary(
+                "fc005c032014086259608092620164226aa8261dffffffffffffffffffffffffffffffff00000637004b000641000006913c66116aa8261d01060003000091c400ce5421ff6a1863000116061d000008ffffffffffffff6aa8261d01010000bbfccf"),
+                "precision", 1681);
+
+        verifyAttribute(decoder, binary(
+                "fc005c032014086259608092620164226aa8261dffffffffffffffffffffffffffffffff00000637004b000641000006913c66116aa8261d01060003000091c400ce5421ff6a1863000116061d000008ffffffffffffff6aa8261d01010000bbfccf"),
+                "trackingDuration", 60);
+
+        verifyAttribute(decoder, binary(
+                "fc0040032006086104508038701564216913f223403693012f635344405c829142b302f7427f33331a2e000000a40011046a1055ffff1f0000000000ffffff04ff09ff1a30cf"),
+                "precision", 4356);
+
+        // Frame 3 has sub-length 33 (no tracking duration field)
+        verifyAttribute(decoder, binary(
+                "fc0040032006086104508038701564216913f223403693012f635344405c829142b302f7427f33331a2e000000a40011046a1055ffff1f0000000000ffffff04ff09ff1a30cf"),
+                "trackingDuration", null);
+
     }
 
 }
