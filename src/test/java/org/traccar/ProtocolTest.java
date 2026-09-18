@@ -130,6 +130,7 @@ public class ProtocolTest extends BaseTest {
             case "speed" -> assertEquals(expected, position.getSpeed());
             case "course" -> assertEquals(expected, position.getCourse());
             case "altitude" -> assertEquals(expected, position.getAltitude());
+            case "accuracy" -> assertEquals(expected, position.getAccuracy());
             case "network" -> assertEquals(expected, position.getNetwork());
 
             default -> assertEquals(expected, position.getAttributes().get(key));
