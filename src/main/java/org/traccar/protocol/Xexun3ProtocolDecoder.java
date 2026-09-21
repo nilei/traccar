@@ -151,6 +151,22 @@ public class Xexun3ProtocolDecoder extends BaseProtocolDecoder {
                             buf.readUnsignedInt(),
                             buf.readUnsignedByte()));
                 }
+                case 0x68 -> {
+                    position.setDeviceTime(new Date(buf.readUnsignedInt() * 1000));
+                    int scanType = buf.readUnsignedByte(); // 1 = wifi, 2 = bluetooth
+                    int count = buf.readUnsignedByte();
+                    if (scanType == 1) {
+                        for (int i = 0; i < count; i++) {
+                            String mac = ByteBufUtil.hexDump(buf.readSlice(6)).replaceAll("(..)", "$1:");
+                            network.addWifiAccessPoint(WifiAccessPoint.from(
+                                    mac.substring(0, mac.length() - 1), buf.readByte()));
+                            buf.readUnsignedByte(); // power consumption
+                        }
+                    } else {
+                        // TODO: Bluetooth beacon handling goes here
+                        buf.skipBytes(count * 8);
+                    }
+                }
                 case 0x69 -> {
                     position.setDeviceTime(new Date(buf.readUnsignedInt() * 1000));
                     int alarmId = buf.readUnsignedByte();
