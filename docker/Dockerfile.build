@@ -3,6 +3,12 @@ WORKDIR /build
 COPY . .
 RUN chmod +x gradlew && ./gradlew assemble --no-daemon -x checkstyleMain -x checkstyleTest
 
+FROM node:22-slim AS web
+RUN apt-get update && apt-get install -y git
+RUN git clone https://github.com/traccar/traccar-web.git /web
+WORKDIR /web
+RUN npm install && npm run build
+
 FROM eclipse-temurin:25 AS jdk
 RUN jlink --add-modules java.se,jdk.charsets,jdk.crypto.ec,jdk.net,jdk.unsupported \
     --strip-debug --no-header-files --no-man-pages --compress=2 --output /jre
@@ -12,7 +18,10 @@ COPY --from=builder /build/target /opt/traccar
 COPY --from=builder /build/setup/traccar.xml /opt/traccar/conf/traccar.xml
 COPY --from=builder /build/schema /opt/traccar/schema
 COPY --from=builder /build/templates /opt/traccar/templates
+COPY --from=web /web/build /opt/traccar/web
+COPY --from=web /web/simple /opt/traccar/web/simple
 COPY --from=jdk /jre /opt/traccar/jre
+RUN mkdir -p /opt/traccar/logs /opt/traccar/data
 WORKDIR /opt/traccar
 ENTRYPOINT ["/opt/traccar/jre/bin/java", "-XX:+ExitOnOutOfMemoryError"]
 CMD ["-jar", "tracker-server.jar", "conf/traccar.xml"]
