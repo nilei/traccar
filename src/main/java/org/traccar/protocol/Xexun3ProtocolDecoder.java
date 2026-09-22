@@ -130,8 +130,20 @@ public class Xexun3ProtocolDecoder extends BaseProtocolDecoder {
                     buf.readUnsignedByte(); // ephemeris
                     position.set(Position.KEY_SATELLITES, buf.readUnsignedByte());
                     buf.readUnsignedByte(); // signal
-                    position.setSpeed(UnitsConverter.knotsFromKph(buf.readUnsignedShort()));
+                    position.setSpeed(UnitsConverter.knotsFromKph(buf.readUnsignedShort() / 10.0));
                     position.setCourse(buf.readUnsignedShort() / 10.0);
+                    if (subEnd - buf.readerIndex() >= 2) {
+                        int precision = buf.readUnsignedShort();
+                        if (precision != 0xFFFF) {
+                            position.setAccuracy(precision / 10.0);
+                        }
+                    }
+                    if (subEnd - buf.readerIndex() >= 1) {
+                        int trackingDuration = buf.readUnsignedByte();
+                        if (trackingDuration != 0xFF) {
+                            position.set("trackingDuration", trackingDuration);
+                        }
+                    }
                 }
                 case 0x65 -> {
                     position.setDeviceTime(new Date(buf.readUnsignedInt() * 1000));
