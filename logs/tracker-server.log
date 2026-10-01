@@ -2067,3 +2067,142 @@
 2026-10-01 22:05:49  INFO: Update summary generated
 2026-10-01 22:05:49  INFO: Command execution complete
 2026-10-01 22:05:50 ERROR: Main method error - /app/web - NoSuchFileException (... < WebServer:134 < *:97 < MainModule:221 < <gener:-1 < *:-1 < ... < Main:124 < ...)
+2026-10-01 22:06:01  INFO: Operating system name: Linux version: 6.1.158+ architecture: amd64
+2026-10-01 22:06:01  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 21.0.12.1+1-LTS
+2026-10-01 22:06:01  INFO: Memory limit heap: 1990mb non-heap: 0mb
+2026-10-01 22:06:01  INFO: Character encoding: UTF-8
+2026-10-01 22:06:01  INFO: Version: 6.16.0
+2026-10-01 22:06:01  INFO: Starting server...
+2026-10-01 22:06:01  INFO: HikariPool-1 - Starting...
+2026-10-01 22:06:02  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-10-01 22:06:02  INFO: HikariPool-1 - Start completed.
+2026-10-01 22:06:02  INFO: Set default schema name to PUBLIC
+2026-10-01 22:06:02  INFO: Successfully acquired change log lock
+2026-10-01 22:06:02  INFO: Clearing database change log checksums for database h2
+2026-10-01 22:06:02  INFO: Successfully released change log lock
+2026-10-01 22:06:02  INFO: Command execution complete
+2026-10-01 22:06:02  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:03  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:03  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:03  INFO: UPDATE SUMMARY
+2026-10-01 22:06:03  INFO: Run:                          0
+2026-10-01 22:06:03  INFO: Previously run:              35
+2026-10-01 22:06:03  INFO: Filtered out:                 1
+2026-10-01 22:06:03  INFO: -------------------------------
+2026-10-01 22:06:03  INFO: Total change sets:           36
+2026-10-01 22:06:03  INFO: FILTERED CHANGE SETS SUMMARY
+2026-10-01 22:06:03  INFO: DBMS mismatch:                1
+2026-10-01 22:06:03  INFO: Update summary generated
+2026-10-01 22:06:03  INFO: Command execution complete
+2026-10-01 22:06:04 ERROR: Main method error - /app/web - NoSuchFileException (... < WebServer:134 < *:97 < MainModule:221 < <gener:-1 < *:-1 < ... < Main:124 < ...)
+2026-10-01 22:06:14  INFO: Operating system name: Linux version: 6.1.158+ architecture: amd64
+2026-10-01 22:06:14  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 21.0.12.1+1-LTS
+2026-10-01 22:06:14  INFO: Memory limit heap: 1990mb non-heap: 0mb
+2026-10-01 22:06:14  INFO: Character encoding: UTF-8
+2026-10-01 22:06:14  INFO: Version: 6.16.0
+2026-10-01 22:06:14  INFO: Starting server...
+2026-10-01 22:06:15  INFO: HikariPool-1 - Starting...
+2026-10-01 22:06:15  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-10-01 22:06:15  INFO: HikariPool-1 - Start completed.
+2026-10-01 22:06:15  INFO: Set default schema name to PUBLIC
+2026-10-01 22:06:15  INFO: Successfully acquired change log lock
+2026-10-01 22:06:15  INFO: Clearing database change log checksums for database h2
+2026-10-01 22:06:15  INFO: Successfully released change log lock
+2026-10-01 22:06:15  INFO: Command execution complete
+2026-10-01 22:06:16  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:16  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:16  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:16  INFO: UPDATE SUMMARY
+2026-10-01 22:06:16  INFO: Run:                          0
+2026-10-01 22:06:16  INFO: Previously run:              35
+2026-10-01 22:06:16  INFO: Filtered out:                 1
+2026-10-01 22:06:16  INFO: -------------------------------
+2026-10-01 22:06:16  INFO: Total change sets:           36
+2026-10-01 22:06:16  INFO: FILTERED CHANGE SETS SUMMARY
+2026-10-01 22:06:16  INFO: DBMS mismatch:                1
+2026-10-01 22:06:16  INFO: Update summary generated
+2026-10-01 22:06:16  INFO: Command execution complete
+2026-10-01 22:06:17 ERROR: Main method error - /app/web - NoSuchFileException (... < WebServer:134 < *:97 < MainModule:221 < <gener:-1 < *:-1 < ... < Main:124 < ...)
+2026-10-01 22:06:28  INFO: Operating system name: Linux version: 6.1.158+ architecture: amd64
+2026-10-01 22:06:28  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 21.0.12.1+1-LTS
+2026-10-01 22:06:28  INFO: Memory limit heap: 1990mb non-heap: 0mb
+2026-10-01 22:06:28  INFO: Character encoding: UTF-8
+2026-10-01 22:06:28  INFO: Version: 6.16.0
+2026-10-01 22:06:28  INFO: Starting server...
+2026-10-01 22:06:28  INFO: HikariPool-1 - Starting...
+2026-10-01 22:06:28  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-10-01 22:06:28  INFO: HikariPool-1 - Start completed.
+2026-10-01 22:06:28  INFO: Set default schema name to PUBLIC
+2026-10-01 22:06:29  INFO: Successfully acquired change log lock
+2026-10-01 22:06:29  INFO: Clearing database change log checksums for database h2
+2026-10-01 22:06:29  INFO: Successfully released change log lock
+2026-10-01 22:06:29  INFO: Command execution complete
+2026-10-01 22:06:29  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:30  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:30  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:30  INFO: UPDATE SUMMARY
+2026-10-01 22:06:30  INFO: Run:                          0
+2026-10-01 22:06:30  INFO: Previously run:              35
+2026-10-01 22:06:30  INFO: Filtered out:                 1
+2026-10-01 22:06:30  INFO: -------------------------------
+2026-10-01 22:06:30  INFO: Total change sets:           36
+2026-10-01 22:06:30  INFO: FILTERED CHANGE SETS SUMMARY
+2026-10-01 22:06:30  INFO: DBMS mismatch:                1
+2026-10-01 22:06:30  INFO: Update summary generated
+2026-10-01 22:06:30  INFO: Command execution complete
+2026-10-01 22:06:31 ERROR: Main method error - /app/web - NoSuchFileException (... < WebServer:134 < *:97 < MainModule:221 < <gener:-1 < *:-1 < ... < Main:124 < ...)
+2026-10-01 22:06:41  INFO: Operating system name: Linux version: 6.1.158+ architecture: amd64
+2026-10-01 22:06:41  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 21.0.12.1+1-LTS
+2026-10-01 22:06:41  INFO: Memory limit heap: 1990mb non-heap: 0mb
+2026-10-01 22:06:41  INFO: Character encoding: UTF-8
+2026-10-01 22:06:41  INFO: Version: 6.16.0
+2026-10-01 22:06:41  INFO: Starting server...
+2026-10-01 22:06:41  INFO: HikariPool-1 - Starting...
+2026-10-01 22:06:41  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-10-01 22:06:41  INFO: HikariPool-1 - Start completed.
+2026-10-01 22:06:41  INFO: Set default schema name to PUBLIC
+2026-10-01 22:06:42  INFO: Successfully acquired change log lock
+2026-10-01 22:06:42  INFO: Clearing database change log checksums for database h2
+2026-10-01 22:06:42  INFO: Successfully released change log lock
+2026-10-01 22:06:42  INFO: Command execution complete
+2026-10-01 22:06:42  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:42  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:43  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:43  INFO: UPDATE SUMMARY
+2026-10-01 22:06:43  INFO: Run:                          0
+2026-10-01 22:06:43  INFO: Previously run:              35
+2026-10-01 22:06:43  INFO: Filtered out:                 1
+2026-10-01 22:06:43  INFO: -------------------------------
+2026-10-01 22:06:43  INFO: Total change sets:           36
+2026-10-01 22:06:43  INFO: FILTERED CHANGE SETS SUMMARY
+2026-10-01 22:06:43  INFO: DBMS mismatch:                1
+2026-10-01 22:06:43  INFO: Update summary generated
+2026-10-01 22:06:43  INFO: Command execution complete
+2026-10-01 22:06:44 ERROR: Main method error - /app/web - NoSuchFileException (... < WebServer:134 < *:97 < MainModule:221 < <gener:-1 < *:-1 < ... < Main:124 < ...)
+2026-10-01 22:06:54  INFO: Operating system name: Linux version: 6.1.158+ architecture: amd64
+2026-10-01 22:06:54  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 21.0.12.1+1-LTS
+2026-10-01 22:06:54  INFO: Memory limit heap: 1990mb non-heap: 0mb
+2026-10-01 22:06:54  INFO: Character encoding: UTF-8
+2026-10-01 22:06:54  INFO: Version: 6.16.0
+2026-10-01 22:06:54  INFO: Starting server...
+2026-10-01 22:06:54  INFO: HikariPool-1 - Starting...
+2026-10-01 22:06:55  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-10-01 22:06:55  INFO: HikariPool-1 - Start completed.
+2026-10-01 22:06:55  INFO: Set default schema name to PUBLIC
+2026-10-01 22:06:55  INFO: Successfully acquired change log lock
+2026-10-01 22:06:55  INFO: Clearing database change log checksums for database h2
+2026-10-01 22:06:55  INFO: Successfully released change log lock
+2026-10-01 22:06:55  INFO: Command execution complete
+2026-10-01 22:06:55  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-10-01 22:06:56  INFO: UPDATE SUMMARY
+2026-10-01 22:06:56  INFO: Run:                          0
+2026-10-01 22:06:56  INFO: Previously run:              35
+2026-10-01 22:06:56  INFO: Filtered out:                 1
+2026-10-01 22:06:56  INFO: -------------------------------
+2026-10-01 22:06:56  INFO: Total change sets:           36
+2026-10-01 22:06:56  INFO: FILTERED CHANGE SETS SUMMARY
+2026-10-01 22:06:56  INFO: DBMS mismatch:                1
+2026-10-01 22:06:56  INFO: Update summary generated
+2026-10-01 22:06:56  INFO: Command execution complete
