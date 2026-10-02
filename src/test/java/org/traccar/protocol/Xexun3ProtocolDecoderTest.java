@@ -12,7 +12,7 @@ public class Xexun3ProtocolDecoderTest extends ProtocolTest {
 
         verifyDecode(decoder, binary(
                 "fc005c032014086259608092620164226aa8261dffffffffffffffffffffffffffffffff00000637004b000641000006913c66116aa8261d01060003000091c400ce5421ff6a1863000116061d000008ffffffffffffff6aa8261d01010000bbfccf"),
-                position().location("2026-09-14T16:51:41.000Z", false, 0, 0).outdated(false));
+                position().location("2026-09-14T16:51:41.000Z", false, 0, 0));
 
         verifyDecode(decoder, binary(
                 "fc000b03200108610450803870158318cf"));
