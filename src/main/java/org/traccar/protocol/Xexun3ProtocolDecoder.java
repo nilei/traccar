@@ -117,7 +117,6 @@ public class Xexun3ProtocolDecoder extends BaseProtocolDecoder {
 
             switch (subType) {
                 case 0x64 -> {
-                    hasLocation = true;
                     position.setTime(new Date(buf.readUnsignedInt() * 1000));
                     double latitude = buf.readDouble();
                     double longitude = buf.readDouble();
@@ -125,6 +124,7 @@ public class Xexun3ProtocolDecoder extends BaseProtocolDecoder {
                         position.setValid(true);
                         position.setLatitude(latitude);
                         position.setLongitude(longitude);
+                        hasLocation = true;
                     }
                     position.setAltitude(buf.readFloat());
                     buf.readUnsignedByte(); // ephemeris
